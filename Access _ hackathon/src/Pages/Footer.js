@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       <div>
         <div>
-          <div>
+          <nav>
             <ul>
               <li>
                 <Link to="/about">About Us</Link>
@@ -14,18 +14,19 @@ function Footer() {
                 <Link to="/contact">Leave A Feedback</Link>
               </li>
             </ul>
-          </div>
+          </nav>
           <div>
             <h3>Connect With Our Social Media</h3>
+            {/* Add social media icons/links here */}
           </div>
 
-          <div>
+          <nav>
             <ul>
               <li>
-                <Link to="/SignUp">Sign Up/Create Account</Link>
+                <Link to="/signup">Sign Up/Create Account</Link>
               </li>
               <li>
-                <Link to="/SignIn">Log In</Link>
+                <Link to="/signin">Log In</Link>
               </li>
               <li>
                 <Link to="/help">Forgot Password</Link>
@@ -37,7 +38,7 @@ function Footer() {
                 <Link to="/help">Help & Support</Link>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
         <p>
           © 2023 Hackathon Team 4 - Florence Osei, Sangun Park, Vandhana Mohan,
