@@ -1,0 +1,49 @@
+.e-waste-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+
+}
+
+.e-waste-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+.pharma-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+   
+}
+
+.pharma-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+
+.food-waste-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+   
+}
+
+.food-waste-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-family: 'Bebas Neue', sans-serif;
+  }
