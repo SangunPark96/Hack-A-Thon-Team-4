@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./Assets/EcoLogo.ico"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./Pages/NavBar";
