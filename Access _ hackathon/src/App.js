@@ -7,14 +7,11 @@ import Footer from "./Pages/Footer";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Router>
-          <NavBar />
-          <Routes></Routes>
-        </Router>
-      </header>
-      <Footer />
+      <Router>
+        <NavBar />
+        <Routes></Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
