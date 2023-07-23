@@ -23,13 +23,11 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="" className="App-logo" alt="logo" />
         <Router>
           <Header/>
           <NavBar />
           <AboutUs/>
           <Routes>
-            {/* <Route path="/pharma" element={ <Pharma/>}/> */}
             <Route path="/" element={<Home />} />
             <Route path="/petition" element={<FileaPetition />} />
             <Route path="/contact" element={<Contact />} />

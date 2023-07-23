@@ -12,7 +12,6 @@ const NavBar = () => {
         
         <Nav className="me-auto navbar-links"> {/* Apply the custom CSS class here */}
           <Nav.Link as={Link} to="/" className="me-2">Home</Nav.Link>
-          <Nav.Link as={Link} to="/council" className="me-2">City council</Nav.Link>
           <Nav.Link as={Link} to="/contact" className="me-2">City council</Nav.Link>
 
           <Nav.Link as={Link} to="/profile" className="me-2">Profile</Nav.Link>
