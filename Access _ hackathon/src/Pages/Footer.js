@@ -12,7 +12,7 @@ import {
 
 function Footer() {
   return (
-    <div className="container my-5">
+    <div className="container my-3">
       <footer className="text-center bg-light">
         <div className="container">
           <section className="mt-5">
