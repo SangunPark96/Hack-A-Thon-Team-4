@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { auth } from "../firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
-import { FaCog } from "react-icons/fa";
+import Jessica from "../Images/Jessica.png";
 
 function AuthDetails() {
   const navigate = useNavigate();
@@ -37,45 +37,29 @@ function AuthDetails() {
   return (
     <div>
       {authUser ? (
-        <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="d-flex flex-column flex-sm-row align-items-center gap-5">
           <img
             alt="Profile"
-            src=""
-            className="w-24 h-24 rounded-full shadow-yellow-500/50 shadow-lg"
+            src={Jessica}
+            className="rounded-circle my-3"
+            style={{ width: "100px", height: "100px" }}
           />
-          <Link
-            to="/help"
-            className="mt-2 px-8 py-2 text-black text-xl sm:text-lg md:text-xl font-semibold rounded-lg hover:from-pink-500 hover:to-yellow-500 hover:text-white shadow-yellow-500/50 shadow-md font-bold flex items-center space-x-2"
-          >
-            <FaCog className="text-xl" />
-            <span className="font-medium">Account Settings</span>
-          </Link>
 
           <button
-            className="mt-2 px-8 py-2 text-black text-xl sm:text-lg md:text-xl font-semibold rounded-lg hover:from-pink-500 hover:to-yellow-500 hover:text-white shadow-yellow-500/50 shadow-md font-bold flex items-center space-x-2"
+            className="btn btn-primary btn-lg px-4 py-2 d-flex align-items-center gap-2"
             onClick={userSignOut}
           >
             Sign Out
           </button>
         </div>
       ) : (
-        <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <div>
-            <Link
-              to="/SignIn"
-              className="mt-2 px-8 py-2 text-black text-xl sm:text-lg md:text-xl font-semibold rounded-lg hover:from-pink-500 hover:to-yellow-500 hover:text-white shadow-yellow-500/50 shadow-md font-bold flex items-center space-x-2"
-            >
-              Sign In
-            </Link>
-          </div>
-          <div>
-            <Link
-              className="mt-2 px-8 py-2 text-black text-xl sm:text-lg md:text-xl font-semibold rounded-lg hover:from-pink-500 hover:to-yellow-500 hover:text-white shadow-yellow-500/50 shadow-md font-bold flex items-center space-x-2"
-              to="/SignUp"
-            >
-              Create New Account
-            </Link>
-          </div>
+        <div className="d-flex flex-column flex-sm-row align-items-center gap-4">
+          <Link to="/SignIn" className="btn btn-primary btn-lg px-4 py-2">
+            Sign In
+          </Link>
+          <Link to="/SignUp" className="btn btn-primary btn-lg px-4 py-2">
+            Create New Account
+          </Link>
         </div>
       )}
     </div>

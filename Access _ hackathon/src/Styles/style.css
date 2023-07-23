@@ -1,16 +1,15 @@
-.custom-navbar  {
+/*
+.custom-navbar {
   border-bottom: 1px solid black;
   background-color: rgb(230, 175, 176);
   padding: 3px 0;
   font-size: 18px;
- 
 }
 .nav-link {
-  margin-right: 10px; 
- 
+  margin-right: 10px;
 }
 
-.testing{
+.testing {
   display: flex;
   justify-content: center;
 }
@@ -94,56 +93,52 @@
 
 .profile-petition {
   margin-bottom: 10px;
-  
 }
 
 body {
-  background-color: #f8ece0; /* Warm beige background color */
-  color: #333; /* Dark text color */
-  text-decoration:#4d372d
+  color: #333;
+  text-decoration: #4d372d;
 }
 
 h1 {
-  color: #f35627; /* Bright orange heading color */
+  color: #f35627; 
 }
 
-/* Customize the styling of the AboutUs component */
+ 
 .AboutUs {
-  background-color: #fff8ee; /* Pale cream background color */
+  background-color: #fff8ee; 
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the component */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Customize the styling of the PetitionStatistics, GovernmentResponse, and PopularPetition components */
+
 .PetitionStatistics,
 .GovernmentResponse,
 .PopularPetition {
-  background-color: #fff; /* White background color */
+  background-color: #fff; 
   padding: 20px;
   margin-top: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the components */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 .d-flex {
-  /* Flexbox styles */
+  
   display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .nav-center {
   display: flex;
   justify-content: center;
-
 }
 
 .custom-container {
   max-width: 1200px;
-  margin: 0 auto; /* This will center the container */
+  margin: 0 auto; 
 }
-
 
 .custom-button {
   background-color: #007bff;
@@ -159,5 +154,6 @@ h1 {
 }
 
 .navbar-links {
-  margin-left: auto; /* This will push the links to the right */
+  margin-left: auto; 
 }
+*/

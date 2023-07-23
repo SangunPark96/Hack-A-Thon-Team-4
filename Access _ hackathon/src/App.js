@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./Pages/Footer";
 import FourOFour from "./Pages/FourOFour";
 import SignIn from "./components/auth/SignIn";
@@ -14,38 +13,30 @@ import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Profile from "./Pages/Profile";
 import Resources from "./Pages/Resources";
-import PetitionStatistics from "./components/PetitionStatistics"
-import PopularPetitions  from "./components/PopularPetition"
-import GovernmentResponses  from "./components/GovernmentResponse"
+import PetitionStatistics from "./components/PetitionStatistics";
+import PopularPetitions from "./components/PopularPetition";
+import GovernmentResponses from "./components/GovernmentResponse";
 import FileaPetition from "./components/FileaPetition";
-
-
 
 const App = () => {
   return (
-
-
     <div className="App">
-      <header className="App-header">
-        <img src="" className="App-logo" alt="logo" />
-        <Router>
-          <NavBar />
-          <AboutUs/>
-          <Routes>
-            {/* <Route path="/pharma" element={ <Pharma/>}/> */}
-            <Route path="/" element={<FileaPetition />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/SignIn" element={<SignIn />} />
-            <Route path="/SignUp" element={<SignUp />} />
-            <Route path="/feedback" element={<Feedback />} />
-            <Route path="*" element={<FourOFour />} />
-          </Routes>
-          <Footer />
-        </Router>
-      </header>
-
+      <Router>
+        <Header />
+        <NavBar />
+        <AboutUs />
+        <Routes>
+          <Route path="/" element={<FileaPetition />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/SignIn" element={<SignIn />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="*" element={<FourOFour />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 };
