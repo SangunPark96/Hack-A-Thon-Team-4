@@ -4,7 +4,7 @@ import "./App.css";
 import NavBar from "./Pages/NavBar";
 import Footer from "./Pages/Footer";
 import FourOFour from "./Pages/FourOFour";
-import Pharma from "./Components/Pharma";
+// import Pharma from "./Components/Pharma";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Router>
           <NavBar/>
             <Routes>
-              <Route path="/pharma" element={ <Pharma/>}/>
+              {/* <Route path="/pharma" element={ <Pharma/>}/> */}
               <Route path="*" element={<FourOFour/>} />
             </Routes>
           <Footer/>
