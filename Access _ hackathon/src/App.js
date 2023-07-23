@@ -1,5 +1,4 @@
-import logo from "./Assets/EcoLogo.ico"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -12,14 +11,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" /> 
+        <img src="" className="App-logo" alt="logo" />
         <Router>
-          <NavBar/>
-            <Routes>
-              {/* <Route path="/pharma" element={ <Pharma/>}/> */}
-              <Route path="*" element={<FourOFour/>} />
-            </Routes>
-          <Footer/>
+          <NavBar />
+          <Routes>
+            {/* <Route path="/pharma" element={ <Pharma/>}/> */}
+            <Route path="*" element={<FourOFour />} />
+          </Routes>
+          <Footer />
         </Router>
       </header>
     </div>
