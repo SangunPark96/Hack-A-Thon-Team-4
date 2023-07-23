@@ -1,0 +1,5 @@
+.form-check-input[type="radio"] {
+  /* Adjust the radio button size */
+  width: 1.2rem;
+  height: 1.2rem;
+}

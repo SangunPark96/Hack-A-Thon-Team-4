@@ -1,0 +1,63 @@
+.petition-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+
+}
+
+.petition-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+.city-council-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+   
+}
+
+.city-council-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+
+.resources-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+   
+}
+
+.profile-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+
+.profile-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+   
+}
+
+.resources-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-family: 'Bebas Neue', sans-serif;
+  }

@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Hackathon2023 Access# Cleaner Community
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Housing Hub](https://housing-hub.netlify.app) The Housing Hub Web Application is a purpose-driven project that addresses the concerns and challenges faced by residents of NYCHA housing developments. Developed during the Hackathon 2023 under the theme "Access," our team of four developers worked tirelessly for 36 hours to create a fully functional platform that empowers NYCHA residents to advocate for positive change.
 
-## Available Scripts
+Utilizing a range of cutting-edge technologies, including React, JavaScript, HTML, and CSS, we crafted an intuitive and user-friendly platform. The application enables NYCHA residents to submit and sign petitions related to various housing issues, fostering community engagement and collective action.
 
-In the project directory, you can run:
+Our team's dedication to the project's success led us to integrate external APIs, including Email Js and Firebase. These integrations facilitate smooth communication between residents, providing real-time updates on petition progress and community responses.
 
-### `npm start`
+With its user-friendly interface and advanced search options, the Housing Hub Web Application stands as a testament to the power of technology in driving meaningful change and empowering communities. Completed within a tight time frame of 36 hours, this project showcases our team's passion for creating impactful solutions that enhance accessibility and elevate voices for a better tomorrow.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Team Members
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Our team consisted of three members, each with a specific role:
 
-### `npm test`
+- Florence Osei
+- Sangun Park
+- Vandhana Mohan
+- Wilton Camilo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To learn more about our team members, please refer to the GitHub and LinkedIn links provided in the table below.
 
-### `npm run build`
+## About Us
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+|      Dev Team      |      Role       |                                    About Us                                     |                    GitHub                     |                              LinkedIn                              |
+| :----------------: | :-------------: | :-----------------------------------------------------------------------------: | :-------------------------------------------: | :----------------------------------------------------------------: |
+| **Florence Osei**  |   Design Lead   |          Aspiring software developer with a passion for UI/UX design.           | [GitHub](https://github.com/pursuit-florence) |  [LinkedIn](https://www.linkedin.com/in/florence-ernestina-osei/)  |
+|  **Sangun Park**   | Technical Lead  |   A dedicated software engineer with expertise in full-stack web development.   |   [GitHub](https://github.com/SangunPark96)   |        [LinkedIn](https://www.linkedin.com/in/sangunpark/)         |
+| **Vandhana Mohan** | Project Manager |     Experienced project manager with a background in software development.      |  [GitHub](https://github.com/Vandhana-Mohan)  |       [LinkedIn](https://www.linkedin.com/in/vandhanamohan/)       |
+| **Wilton Camilo**  |    Demo Lead    | Software enthusiast passionate about creating engaging and user-friendly demos. |    [GitHub](https://github.com/WiltonCam)     | [LinkedIn](https://www.linkedin.com/in/wilton-l-camilo-339b78130/) |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### [Trello Link](https://trello.com/b/MHnRjKxN/hackathon-team-4-93)
 
-### `npm run eject`
+### [Miro Link](https://miro.com/app/board/uXjVM0Br2CQ=/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To install this repository, please use npm:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+  npm install
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Skills
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Skills:
 
-### Code Splitting
+- React: A JavaScript library used for building user interfaces and web applications.
+- HTML: Used to create the structure and layout of web pages.
+- CSS: Used to style and format web pages.
+- JavaScript: A programming language that allows you to add interactivity and dynamic behavior to web pages.
+- Git: A version control system that allows you to track changes to your code and collaborate with others.
+- GitHub: GitHub is a popular platform used for hosting and sharing code repositories.
+- Firebase: A platform that provides various tools and services for building web applications, including real-time database and hosting.
+- Adobe Photoshop, PicsArt: A graphics editing software used for image editing and manipulation.
+- API integration: Incorporating data from remote sources using APIs (Application Programming Interface)
+- EmailJS API: Used to send emails directly from JavaScript code, without the need for a server-side implementation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### [Click Here](https://three-m-youtube.netlify.app) - Visit our website to explore the different pages and features we have developed.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
