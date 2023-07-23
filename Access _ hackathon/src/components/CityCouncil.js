@@ -6,6 +6,7 @@ import Councilors from "./Councilors";
 export default function CityCouncil() {
 
     const [ repsList, setRepsList] = useState([])
+    let userList = [];
 
     useEffect(() => {
         axios.get(`https://data.cityofnewyork.us/resource/uvw5-9znb.json`).then((res) => {
