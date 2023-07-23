@@ -19,35 +19,35 @@ function Footer() {
             <div className="row text-center d-flex justify-content-center pt-5">
               <div className="col-md-2">
                 <h6 className="font-weight-bold">
-                  <Link to="/about" className="footer-link text-dark">
+                  <Link to="/about" className="footer-link">
                     About us
                   </Link>
                 </h6>
               </div>
               <div className="col-md-2">
                 <h6 className="font-weight-bold">
-                  <Link to="/contact" className="footer-link text-dark">
+                  <Link to="/contact" className="footer-link">
                     Leave A Feedback
                   </Link>
                 </h6>
               </div>
               <div className="col-md-2">
                 <h6 className="font-weight-bold">
-                  <Link to="/signup" className="footer-link text-dark">
+                  <Link to="/signup" className="footer-link">
                     Create Account
                   </Link>
                 </h6>
               </div>
               <div className="col-md-2">
                 <h6 className="font-weight-bold">
-                  <Link to="/help" className="footer-link text-dark">
+                  <Link to="/help" className="footer-link">
                     FAQ
                   </Link>
                 </h6>
               </div>
               <div className="col-md-2">
                 <h6 className="font-weight-bold">
-                  <Link to="/contact" className="footer-link text-dark">
+                  <Link to="/contact" className="footer-link">
                     Contact Us
                   </Link>
                 </h6>
@@ -57,22 +57,22 @@ function Footer() {
           <hr className="my-5" />
 
           <section className="text-center mb-5">
-            <a href="#" className="text-dark me-4">
+            <a href="#" className="text-dark me-4" target="_blank">
               <FaFacebookF />
             </a>
-            <a href="#" className="text-dark me-4">
+            <a href="#" className="text-dark me-4" target="_blank">
               <FaTwitter />
             </a>
-            <a href="#" className="text-dark me-4">
+            <a href="#" className="text-dark me-4" target="_blank">
               <FaGoogle />
             </a>
-            <a href="#" className="text-dark me-4">
+            <a href="#" className="text-dark me-4" target="_blank">
               <FaInstagram />
             </a>
-            <a href="#" className="text-dark me-4">
+            <a href="#" className="text-dark me-4" target="_blank">
               <FaLinkedin />
             </a>
-            <a href="#" className="text-dark me-4">
+            <a href="#" className="text-dark me-4" target="_blank">
               <FaGithub />
             </a>
           </section>
