@@ -1,3 +1,3 @@
 # Hack-A-Thon-Team-4
 
-Project By SangUn Park, Vandhana Mohan, Florence, Wilton
+Project By SangUn Park, Vandhana Mohan,Florence
