@@ -1,4 +1,4 @@
-.e-waste-link {
+.petition-link {
     text-decoration: none;
     color: #020C1Cff;
     font-size: large;
@@ -7,11 +7,11 @@
 
 }
 
-.e-waste-link:hover {
+.petition-link:hover {
     color: #024A94ff;
     transform: translateY(-10px)
 } 
-.pharma-link {
+.city-council-link {
     text-decoration: none;
     color: #020C1Cff;
     font-size: large;
@@ -20,12 +20,12 @@
    
 }
 
-.pharma-link:hover {
+.city-council-link:hover {
     color: #024A94ff;
     transform: translateY(-10px)
 } 
 
-.food-waste-link {
+.resources-link {
     text-decoration: none;
     color: #020C1Cff;
     font-size: large;
@@ -34,7 +34,21 @@
    
 }
 
-.food-waste-link:hover {
+.profile-link:hover {
+    color: #024A94ff;
+    transform: translateY(-10px)
+} 
+
+.profile-link {
+    text-decoration: none;
+    color: #020C1Cff;
+    font-size: large;
+    transition:  transform .3s;
+    padding:  .5em 1em;
+   
+}
+
+.resources-link:hover {
     color: #024A94ff;
     transform: translateY(-10px)
 } 
