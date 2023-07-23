@@ -19,9 +19,7 @@ function Feedback() {
       ) : (
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label className="form-label">
-              Please Rate from 1 to 5 stars:
-            </label>{" "}
+            <label className="form-label">Please Rate from 1 to 5 stars:</label>{" "}
             <br />
             <div className="form-check form-check-inline">
               <input
