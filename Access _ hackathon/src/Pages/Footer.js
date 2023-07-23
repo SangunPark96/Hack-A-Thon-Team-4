@@ -26,8 +26,8 @@ function Footer() {
               </div>
               <div className="col-md-2">
                 <h6 className="font-weight-bold">
-                  <Link to="/contact" className="footer-link">
-                    Leave A Feedback
+                  <Link to="/feedback" className="footer-link">
+                  Share Your Thoughts
                   </Link>
                 </h6>
               </div>
