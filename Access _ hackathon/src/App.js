@@ -1,4 +1,6 @@
 import logo from "./Assets/EcoLogo.ico"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./Pages/NavBar";
