@@ -18,6 +18,7 @@ import PetitionStatistics from "./components/PetitionStatistics"
 import PopularPetitions  from "./components/PopularPetition"
 import GovernmentResponses  from "./components/GovernmentResponse"
 import FileaPetition from "./components/FileaPetition";
+import CityCouncil from "./components/CityCouncil";
 
 
 
@@ -29,17 +30,20 @@ const App = () => {
       <header className="App-header">
         <img src="" className="App-logo" alt="logo" />
         <Router>
+          <Header/>
           <NavBar />
           <AboutUs/>
           <Routes>
             {/* <Route path="/pharma" element={ <Pharma/>}/> */}
-            <Route path="/" element={<FileaPetition />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/petition" element={<FileaPetition />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/SignIn" element={<SignIn />} />
             <Route path="/SignUp" element={<SignUp />} />
             <Route path="/feedback" element={<Feedback />} />
+            <Route path="/council" element={<CityCouncil/>} />
             <Route path="*" element={<FourOFour />} />
           </Routes>
           <Footer />
