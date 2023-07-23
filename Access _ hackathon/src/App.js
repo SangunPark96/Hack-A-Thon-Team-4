@@ -5,6 +5,9 @@ import "./App.css";
 import NavBar from "./Pages/NavBar";
 import Footer from "./Pages/Footer";
 import FourOFour from "./Pages/FourOFour";
+import SignIn from "./components/auth/SignIn";
+import SignUp from "./components/auth/SignUp";
+
 // import Pharma from "./Components/Pharma";
 
 function App() {
@@ -13,6 +16,8 @@ function App() {
       <header className="App-header">
         <img src="" className="App-logo" alt="logo" />
         <Router>
+          <SignIn />
+          <SignUp />
           <NavBar />
           <Routes>
             {/* <Route path="/pharma" element={ <Pharma/>}/> */}
