@@ -40,10 +40,10 @@ function AuthDetails() {
       name: "Jessica",
       photoURL: Jessica,
     },
-    wilton: {
-      name: "Wilton",
-      photoURL: Wilton,
-    },
+    // wilton: {
+    //   name: "Wilton",
+    //   photoURL: Wilton,
+    // },
   };
 
   return (
@@ -55,7 +55,7 @@ function AuthDetails() {
             src={
               users[authUser.displayName]?.photoURL ||
               authUser.photoURL ||
-              Wilton
+              Jessica
             }
             className="rounded-circle my-3"
             style={{ width: "100px", height: "100px" }}
