@@ -1,25 +1,33 @@
-import React from 'react';
+import React from "react";
 
-const PopularPetitions = () => {
+const PopularPetition = () => {
   return (
-    <div>
-      <h3>Popular petitions</h3>
-      <ul>
-        <li>
-          <p>Concern about the Increasing Homeless Presence in the Community</p>
-          <p>7 signatures in the last hour</p>
+    <div className="container mt-4 mb-5">
+      {" "}
+      {/* Added mb-5 class for bottom margin */}
+      <h3 className="text-center">Popular Petitions</h3>
+      <ul className="list-group">
+        <li className="list-group-item">
+          <h5>
+            Concern about the Increasing Homeless Presence in the Community
+          </h5>
+          <p className="text-secondary">70,000 signatures in the last hour</p>
         </li>
-        <li>
-          <p>Seeking Support to Tackle Gentrification's Impact</p>
-          <p>14 signatures in the last hour</p>
+        <li className="list-group-item">
+          <h5>Seeking Support to Tackle Gentrification's Impact</h5>
+          <p className="text-secondary">8192 signatures in the last hour</p>
         </li>
-        <li>
-          <p>Pest Infestations: A Pressing Health and Hygiene Concern</p>
-          <p>13 signatures in the last hour</p>
+        <li className="list-group-item">
+          <h5>Concerns about Building Infrastructure Degradation</h5>
+          <p className="text-secondary">372 signatures in the last hour</p>
+        </li>
+        <li className="list-group-item">
+          <h5>Addressing Pest Infestations in NYCHA Housing</h5>
+          <p className="text-secondary">2339 signatures in the last hour</p>
         </li>
       </ul>
     </div>
   );
 };
 
-export default PopularPetitions;
+export default PopularPetition;

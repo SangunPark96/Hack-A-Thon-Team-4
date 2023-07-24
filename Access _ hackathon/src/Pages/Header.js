@@ -23,13 +23,13 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="d-flex align-items-center justify-content-between p-3">
+    <header className="d-flex align-items-center justify-content-between p-1">
       <Link to="/">
         <div className="logo ml-3">
           <img
             src={logo}
             alt="Logo"
-            style={{ height: "150px", width: "150px" }}
+            style={{ height: "100px", width: "100px" }}
           />
         </div>
       </Link>
