@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
-        {/* below button code only for responsiveness */}
+        {/* below button code only for mobile hamburger responsiveness */}
         <button
           className="navbar-toggler"
           type="button"
@@ -18,6 +18,7 @@ const NavBar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div
           className="collapse navbar-collapse justify-content-center"
           id="navbarNav"
