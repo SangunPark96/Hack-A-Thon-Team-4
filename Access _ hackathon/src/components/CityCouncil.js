@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CouncilorIndex from "./CouncilorIndex";
+import { FaSearch } from "react-icons/fa";
+import bronx from "../Images/BronxMap.png";
 
 export default function CityCouncil() {
   const [repsList, setRepsList] = useState([]);
   const [borough, setBorough] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredCouncilors, setFilteredCouncilors] = useState([]);
 
   useEffect(() => {
     axios
@@ -17,13 +21,29 @@ export default function CityCouncil() {
       });
   }, []);
 
+  useEffect(() => {
+    // Filter the councilors based on the selected borough and search term
+    setFilteredCouncilors(
+      repsList.filter(
+        (councilor) =>
+          councilor.borough === borough &&
+          councilor.name.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    );
+  }, [borough, searchTerm, repsList]);
+
   const handleChange = (event) => {
     setBorough(event.target.value);
   };
 
+  const handleSearch = () => {
+    // The search is handled automatically by the useEffect hook above
+    // No need for additional logic here
+  };
+
   return (
     <div className="container-fluid">
-      <div className="row justify-content-center">
+      <div className="row">
         <div className="col-md-6">
           <label htmlFor="boroughs">
             <strong>Select your borough:</strong>
@@ -44,9 +64,29 @@ export default function CityCouncil() {
             <option value="Staten Island">Staten Island</option>
           </select>
         </div>
+        <div className="col-md-6">
+          <div className="row justify-content-center">
+            <div className="col-md-6">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search by name"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+            <div className="col-md-2">
+              <button className="btn btn-primary" onClick={handleSearch}>
+                <FaSearch />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="mt-4">
-        <CouncilorIndex councilors={repsList} borough={borough} />
+      <div className="row mt-4">
+        <div className="col-md-6">
+          <CouncilorIndex councilors={filteredCouncilors} borough={borough} />
+        </div>
       </div>
     </div>
   );
