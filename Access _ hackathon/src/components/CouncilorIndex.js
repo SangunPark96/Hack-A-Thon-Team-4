@@ -64,7 +64,6 @@ export default function Councilors({ councilors, borough }) {
       <br></br>
       <div>
         <div>
-          <h2>Your Local Representatives </h2>
           {userList.map((userList) => {
             return <Councilor reps={userList} />;
           })}

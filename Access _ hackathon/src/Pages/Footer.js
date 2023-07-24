@@ -13,30 +13,30 @@ import {
 function Footer() {
   return (
     <footer className="bg-light">
-      <div className="container py-5">
+      <div className="container py-5 footer-container">
         <div className="row text-center">
-          <div className="col-md-2">
+          <div className="col-md-2 footer-item">
             <h6 className="font-weight-bold">
               <Link to="/about" className="footer-link">
                 About us
               </Link>
             </h6>
           </div>
-          <div className="col-md-2">
+          <div className="col-md-2 footer-item">
             <h6 className="font-weight-bold">
               <Link to="/feedback" className="footer-link">
                 Share Your Thoughts
               </Link>
             </h6>
           </div>
-          <div className="col-md-2">
+          <div className="col-md-2 footer-item">
             <h6 className="font-weight-bold">
               <Link to="/signup" className="footer-link">
                 Create Account
               </Link>
             </h6>
           </div>
-          <div className="col-md-2">
+          <div className="col-md-2 footer-item">
             <h6 className="font-weight-bold">
               <Link to="/contact" className="footer-link">
                 Contact Us
@@ -47,30 +47,51 @@ function Footer() {
         <hr className="my-5" />
 
         <div className="text-center mb-5">
-          <a href="#" className="text-dark me-4" target="_blank">
+          <Link
+            to="#"
+            className="text-dark me-4 footer-social-icons"
+            target="_blank"
+          >
             <FaFacebookF />
-          </a>
-          <a href="#" className="text-dark me-4" target="_blank">
+          </Link>
+          <Link
+            to="#"
+            className="text-dark me-4 footer-social-icons"
+            target="_blank"
+          >
             <FaTwitter />
-          </a>
-          <a href="#" className="text-dark me-4" target="_blank">
+          </Link>
+          <Link
+            to="#"
+            className="text-dark me-4 footer-social-icons"
+            target="_blank"
+          >
             <FaGoogle />
-          </a>
-          <a href="#" className="text-dark me-4" target="_blank">
+          </Link>
+          <Link
+            to="#"
+            className="text-dark me-4 footer-social-icons"
+            target="_blank"
+          >
             <FaInstagram />
-          </a>
-          <a href="#" className="text-dark me-4" target="_blank">
+          </Link>
+          <Link
+            to="#"
+            className="text-dark me-4 footer-social-icons"
+            target="_blank"
+          >
             <FaLinkedin />
-          </a>
-          <a href="#" className="text-dark me-4" target="_blank">
+          </Link>
+          <Link
+            to="#"
+            className="text-dark me-4 footer-social-icons"
+            target="_blank"
+          >
             <FaGithub />
-          </a>
+          </Link>
         </div>
       </div>
-      <div
-        className="text-center py-3"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-      >
+      <div className="text-center py-3">
         <p className="text-dark mb-0" style={{ fontSize: "12px" }}>
           © 2023 Copyright: Hackathon Team - Florence Osei, Sangun Park,
           Vandhana Mohan, Wilton Camilo.

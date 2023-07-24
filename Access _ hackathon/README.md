@@ -1,6 +1,6 @@
 # Hackathon2023 Access# Cleaner Community
 
-[Housing Hub](https://housing-hub.netlify.app) The Housing Hub Web Application is a purpose-driven project that addresses the concerns and challenges faced by residents of NYCHA housing developments. Developed during the Hackathon 2023 under the theme "Access," our team of four developers worked tirelessly for 36 hours to create a fully functional platform that empowers NYCHA residents to advocate for positive change.
+[Housing Hub](https://nychousinghub.netlify.app/) The Housing Hub Web Application is a purpose-driven project that addresses the concerns and challenges faced by residents of NYCHA housing developments. Developed during the Hackathon 2023 under the theme "Access," our team of four developers worked tirelessly for 36 hours to create a fully functional platform that empowers NYCHA residents to advocate for positive change.
 
 Utilizing a range of cutting-edge technologies, including React, JavaScript, HTML, and CSS, we crafted an intuitive and user-friendly platform. The application enables NYCHA residents to submit and sign petitions related to various housing issues, fostering community engagement and collective action.
 
@@ -61,6 +61,6 @@ Skills:
 - API integration: Incorporating data from remote sources using APIs (Application Programming Interface)
 - EmailJS API: Used to send emails directly from JavaScript code, without the need for a server-side implementation.
 
-#### [Click Here](https://three-m-youtube.netlify.app) - Visit our website to explore the different pages and features we have developed.
+#### [Click Here](https://nychousinghub.netlify.app/) - Visit our website to explore the different pages and features we have developed.
 
 ---

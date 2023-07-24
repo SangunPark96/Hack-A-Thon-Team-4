@@ -26,7 +26,7 @@ export default function CityCouncil() {
             <label for="boroughs"><strong>Select your borough:</strong></label>
 
                 <select name="boroughs" class="form-control" id="borough" onChange={handleChange}>
-                    <option value="placeholder">Choose a Boro</option>
+                    <option value="placeholder">Choose a Borough in New York City</option>
                     <option value="Bronx">Bronx</option>
                     <option value="Queens">Queens</option>
                     <option value="Brooklyn">Brooklyn</option>
