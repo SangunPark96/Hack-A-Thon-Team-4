@@ -4,10 +4,7 @@ import "../Styles/NavBar.css";
 
 const NavBar = () => {
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-light"
-      style={{ backgroundColor: "#377CA3ff" }}
-    >
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         {/* below button code only for responsiveness */}
         <button
