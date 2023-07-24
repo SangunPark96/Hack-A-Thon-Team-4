@@ -1,38 +1,73 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "../Styles/style.css";
+import "../Styles/NavBar.css";
 
 const NavBar = () => {
   return (
-    <Navbar
-      bg="light"
-      data-bs-theme="light"
-      className="border-bottom custom-navbar"
+    <nav
+      className="navbar navbar-expand-lg navbar-light"
+      style={{ backgroundColor: "#377CA3ff" }}
     >
-      <Container>
-        <Nav className="me-auto navbar-links">
-          <Nav.Link as={Link} to="/" className="me-2">
-            Home
-          </Nav.Link>
-          <Nav.Link as={Link} to="/council" className="me-2">
-            City council
-          </Nav.Link>
-          <Nav.Link as={Link} to="/contact" className="me-2">
-            City council
-          </Nav.Link>
-
-          <Nav.Link as={Link} to="/profile" className="me-2">
-            Profile
-          </Nav.Link>
-          <Nav.Link as={Link} to="/resources" className="me-2">
-            Resources
-          </Nav.Link>
-        </Nav>
-        <Navbar.Brand as={Link} to="/"></Navbar.Brand>
-      </Container>
-    </Navbar>
+      <div className="container">
+        {/* below button code only for responsiveness */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav nav-fill">
+            <li className="nav-item">
+              <Link to="/" className="nav-link nav-link-animation custom-link">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/council"
+                className="nav-link nav-link-animation custom-link"
+              >
+                City Council
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/contact"
+                className="nav-link nav-link-animation custom-link"
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/profile"
+                className="nav-link nav-link-animation custom-link"
+              >
+                Profile
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/resources"
+                className="nav-link nav-link-animation custom-link"
+              >
+                Resources
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
-export default NavBar; //#377CA3ff
+export default NavBar;
