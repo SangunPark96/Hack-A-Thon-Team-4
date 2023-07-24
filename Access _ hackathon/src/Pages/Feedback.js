@@ -97,8 +97,10 @@ function Feedback() {
               id="comment"
               value={comment}
               onChange={(event) => setComment(event.target.value)}
-              rows="3"
-              style={{ maxWidth: "300px", margin: "0 auto" }} // Adjust the width and center the text area
+              rows="4"
+              placeholder="Enter your feedback : "
+              title="Your feedback please : "
+              style={{ maxWidth: "38%", margin: "0 auto" }} // Adjust the width and center the text area
             />
           </div>
           <button type="submit" className="btn btn-primary">
