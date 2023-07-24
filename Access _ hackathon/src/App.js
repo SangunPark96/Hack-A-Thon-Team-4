@@ -15,7 +15,6 @@ import Profile from "./Pages/Profile";
 import Resources from "./Pages/Resources";
 import PetitionStatistics from "./components/PetitionStatistics";
 import PopularPetitions from "./components/PopularPetition";
-import GovernmentResponses from "./components/GovernmentResponse";
 import FileaPetition from "./components/FileaPetition";
 import CityCouncil from "./components/CityCouncil";
 
