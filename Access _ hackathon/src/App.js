@@ -22,7 +22,6 @@ import CityCouncil from "./components/CityCouncil";
 const App = () => {
   return (
     <div className="App">
-
       <Router>
         <Header />
         <NavBar />
@@ -41,7 +40,6 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
-
     </div>
   );
 };
