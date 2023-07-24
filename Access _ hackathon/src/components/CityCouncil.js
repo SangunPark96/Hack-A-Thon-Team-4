@@ -65,8 +65,8 @@ export default function CityCouncil() {
           </select>
         </div>
         <div className="col-md-6">
-          <div className="row justify-content-center">
-            <div className="col-md-10">
+          <div className="d-flex justify-content-center align-items-center"> {/* Use d-flex and align-items-center */}
+            <div className="flex-grow-1"> {/* Use flex-grow-1 to expand the search input */}
               <input
                 type="text"
                 className="form-control"
@@ -75,7 +75,7 @@ export default function CityCouncil() {
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
-            <div className="col-md-2">
+            <div className="ms-2"> {/* Use ms-2 to add margin to the search icon */}
               <button className="btn btn-primary" onClick={handleSearch}>
                 <FaSearch />
               </button>
