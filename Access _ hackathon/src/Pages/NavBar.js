@@ -17,10 +17,7 @@ const NavBar = () => {
             Home
           </Nav.Link>
           <Nav.Link as={Link} to="/council" className="me-2">
-            City council
-          </Nav.Link>
-          <Nav.Link as={Link} to="/contact" className="me-2">
-            City council
+            City Council Reps
           </Nav.Link>
 
           <Nav.Link as={Link} to="/profile" className="me-2">
