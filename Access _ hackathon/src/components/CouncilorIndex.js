@@ -20,14 +20,14 @@ export default function Councilors({ councilors, borough }) {
   return (
     <div>
       <div className="row justify-content-center">
-        <div className="col-md-6">
+        {/* <div className="col-md-6">
           <input
             type="text"
             className="form-control"
             placeholder="Search by name"
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-        </div>
+        </div> */}
       </div>
       <div id="map-box">
         {borough === "Bronx" ? (
