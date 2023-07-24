@@ -11,6 +11,7 @@ const NavBar = () => {
       className="border-bottom custom-navbar"
     >
       <Container>
+
         <Nav className="me-auto navbar-links">
           <Nav.Link as={Link} to="/" className="me-2">
             Home
