@@ -36,14 +36,16 @@ const NavBar = () => {
                 City Council
               </Link>
             </li>
+
             <li className="nav-item">
               <Link
-                to="/contact"
+                to="/petition"
                 className="nav-link nav-link-animation custom-link"
               >
-                Contact
+                Voice A Concern
               </Link>
             </li>
+
             <li className="nav-item">
               <Link
                 to="/profile"

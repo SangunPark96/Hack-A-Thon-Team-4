@@ -3,8 +3,8 @@ import React from 'react';
 const GovernmentResponses = () => {
   return (
     <div>
-      <h3>If a petition gets 10,000 signatures, the government will respond</h3>
-      <p>Require employers to offer career breaks for parents with a seriously ill child</p>
+      <h3>If we rally our voices together, we WILL be heard!</h3>
+      <p></p>
       <p>The government responded on 20 July 2023</p>
       <p>
         The Government understands the difficulties and worry faced by parents of seriously ill children.
@@ -25,8 +25,11 @@ const GovernmentResponses = () => {
         takes place in the absence of strong and enforceable environmental regulations and standards.
       </p>
       <a href="/">Read the response to 'Stop deep-sea mining' in full</a>
+      <br/>
       <a href="/">See all petitions with a government response (845)</a>
+      <br/>
       <a href="/">See all petitions waiting for a government response (8)</a>
+      <br/>
     </div>
   );
 };
