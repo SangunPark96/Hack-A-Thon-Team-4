@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios";
-import Councilors from "./Councilors";
+import CouncilorIndex from "./CouncilorIndex";
 
 
 export default function CityCouncil() {
 
     const [ repsList, setRepsList] = useState([])
-    let userList = [];
+    const [ borough, setBorough ] = useState("")
 
     useEffect(() => {
         axios.get(`https://data.cityofnewyork.us/resource/uvw5-9znb.json`).then((res) => {
@@ -16,12 +16,28 @@ export default function CityCouncil() {
         })
     }, []);
 
+    const handleChange = (event) => {
+        setBorough(event.target.value);
+      };
+    
 
     return (
-        <div>
-            {repsList.map((repsList, index) => {
-                    return <Councilors key={index} councilors={repsList} index={index}/>;
-                })}
+        <div class="container-fluid">
+            <label for="boroughs"><strong>Select your borough:</strong></label>
+
+                <select name="boroughs" class="form-control" id="borough" onChange={handleChange}>
+                    <option value="placeholder">Choose a Boro</option>
+                    <option value="Bronx">Bronx</option>
+                    <option value="Queens">Queens</option>
+                    <option value="Brooklyn">Brooklyn</option>
+                    <option value="Manhattan">Manhattan</option>
+                    <option value="Staten Island">Staten Island</option>
+                </select>   
+            <div>
+                
+                    <CouncilorIndex councilors={repsList} borough={borough} />
+                
+            </div>
         </div>
     )
 }

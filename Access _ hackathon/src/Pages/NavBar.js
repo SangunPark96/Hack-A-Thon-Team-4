@@ -6,7 +6,6 @@ const NavBar = () => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light"
-      style={{ backgroundColor: "#377CA3ff" }}
     >
       <div className="container">
         {/* below button code only for responsiveness */}
