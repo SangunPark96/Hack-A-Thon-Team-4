@@ -41,6 +41,15 @@ const NavBar = () => {
            
             <li className="nav-item">
               <Link
+                to="/petition"
+                className="nav-link nav-link-animation custom-link"
+              >
+                Voice A Concern
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
                 to="/profile"
                 className="nav-link nav-link-animation custom-link"
               >
