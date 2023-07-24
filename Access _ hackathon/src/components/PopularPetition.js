@@ -4,7 +4,6 @@ const PopularPetition = () => {
   return (
     <div className="container mt-4 mb-5">
       {" "}
-      {/* Added mb-5 class for bottom margin */}
       <h3 className="text-center">Popular Petitions</h3>
       <ul className="list-group">
         <li className="list-group-item">
