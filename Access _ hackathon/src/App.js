@@ -25,10 +25,10 @@ const App = () => {
       <Router>
         <Header />
         <NavBar />
-        <AboutUs />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/petition" element={<FileaPetition />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/resources" element={<Resources />} />
