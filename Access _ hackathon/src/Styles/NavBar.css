@@ -1,0 +1,19 @@
+.custom-link {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin: 0 35px;
+}
+
+.navbar {
+  background-color: #377ca3ff;
+}
+
+.nav-link-animation {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.nav-link-animation:hover {
+  box-shadow: 0 2px 2px #ffffff, 0 2px 7px #ff515aff;
+  transform: translateY(-2px);
+}
