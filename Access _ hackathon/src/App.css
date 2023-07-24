@@ -1,17 +1,6 @@
 .App {
   text-align: center;
   background-color: rgb(134, 202, 241);
-}
-
-.App-header {
-
-  background-color: rgb(134, 202, 241);;
-
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  letter-spacing: 0.3px;
+  font-family: "Roboto", sans-serif;
 }

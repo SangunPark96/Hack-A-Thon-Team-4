@@ -4,9 +4,7 @@ import "../Styles/NavBar.css";
 
 const NavBar = () => {
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-light"
-    >
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         {/* below button code only for responsiveness */}
         <button
@@ -38,7 +36,7 @@ const NavBar = () => {
                 City Council
               </Link>
             </li>
-           
+
             <li className="nav-item">
               <Link
                 to="/petition"
