@@ -1,0 +1,37 @@
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  padding: 8px;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.thank-you-message {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
