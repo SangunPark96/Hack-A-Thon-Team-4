@@ -13,7 +13,7 @@ function SignIn() {
     event.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        navigate("/index");
+        navigate("/");
       })
       .catch((error) => {
         console.log(error);
@@ -22,6 +22,7 @@ function SignIn() {
 
   function google() {
     signInWithRedirect(auth, provider);
+    navigate("/");
   }
 
   return (
@@ -63,8 +64,7 @@ function SignIn() {
                 title="Enter your password"
               />
               <p className="form-text" style={{ fontSize: "14px" }}>
-                Use 8 or more characters with letters, numbers &
-                symbols
+                Use 8 or more characters with letters, numbers & symbols
               </p>
             </div>
 
@@ -87,7 +87,7 @@ function SignIn() {
             Don't have an account?{" "}
             <Link
               to="/SignUp"
-              className="font-medium text-light text-decoration-none"
+              className="font-medium text-dark text-decoration-none"
             >
               Sign up
             </Link>

@@ -20,7 +20,7 @@ function SignUp() {
     }
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        navigate("/index");
+        navigate("/");
       })
       .catch((error) => {
         console.log(error);

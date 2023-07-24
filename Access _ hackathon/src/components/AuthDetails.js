@@ -3,6 +3,7 @@ import { auth } from "../firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import Jessica from "../Images/Jessica.png";
+import Wilton from "../Images/Wilton.png";
 
 function AuthDetails() {
   const navigate = useNavigate();
@@ -34,17 +35,36 @@ function AuthDetails() {
     }
   };
 
+  const users = {
+    jessica: {
+      name: "Jessica",
+      photoURL: Jessica,
+    },
+    wilton: {
+      name: "Wilton",
+      photoURL: Wilton,
+    },
+  };
+
   return (
     <div>
       {authUser ? (
         <div className="d-flex flex-column flex-sm-row align-items-center gap-5">
           <img
             alt="Profile"
-            src={Jessica}
+            src={
+              users[authUser.displayName]?.photoURL ||
+              authUser.photoURL ||
+              Wilton
+            }
             className="rounded-circle my-3"
             style={{ width: "100px", height: "100px" }}
           />
-
+          {users[authUser.displayName] && (
+            <span className="text-dark me-2">
+              Welcome, {users[authUser.displayName].name}
+            </span>
+          )}
           <button
             className="btn btn-primary btn-lg px-4 py-2 d-flex align-items-center gap-2"
             onClick={userSignOut}
