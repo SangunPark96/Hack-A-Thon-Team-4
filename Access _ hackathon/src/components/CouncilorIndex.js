@@ -1,24 +1,34 @@
+import React, { useState } from "react";
 import Councilor from "./Councilor";
 import bronx from "../Images/BronxMap.png";
 import manhattan from "../Images/ManhattanMap.png";
 import queens from "../Images/QueensMap.png";
 import brooklyn from "../Images/BrooklynMap.png";
 import staten from "../Images/StatenMap.png";
-import "./Councilor.css";
+import "../Styles/Councilor.css";
 
 export default function Councilors({ councilors, borough }) {
-  const userList = [];
+  const [searchTerm, setSearchTerm] = useState("");
 
-  for (let i = 0; i < councilors.length; i++) {
-    if (councilors[i].borough === borough) {
-      userList.push(councilors[i]);
-    }
-  }
-
-  console.log(userList);
+  const filteredCouncilors = councilors.filter((councilor) => {
+    return (
+      councilor.borough === borough &&
+      councilor.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  });
 
   return (
     <div>
+      <div className="row justify-content-center">
+        <div className="col-md-6">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Search by name"
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+      </div>
       <div id="map-box">
         {borough === "Bronx" ? (
           <img
@@ -61,11 +71,10 @@ export default function Councilors({ councilors, borough }) {
           />
         ) : null}
       </div>
-      <br></br>
+      <br />
       <div>
         <div>
-          <h2>Your Local Representatives </h2>
-          {userList.map((userList) => {
+          {filteredCouncilors.map((userList) => {
             return <Councilor reps={userList} />;
           })}
         </div>

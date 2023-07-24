@@ -1,0 +1,13 @@
+.resource-title {
+  font-size: 22px; /* Increase the font size */
+  font-weight: bold; /* Make the title bolder */
+}
+
+.resource-description {
+  text-align: justify; /* Justify the text */
+}
+
+/* Add space between the last row and footer */
+.container {
+  margin-bottom: 40px;
+}
