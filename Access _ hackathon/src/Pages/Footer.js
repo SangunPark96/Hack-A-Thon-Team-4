@@ -38,13 +38,6 @@ function Footer() {
           </div>
           <div className="col-md-2">
             <h6 className="font-weight-bold">
-              <Link to="/help" className="footer-link">
-                FAQ
-              </Link>
-            </h6>
-          </div>
-          <div className="col-md-2">
-            <h6 className="font-weight-bold">
               <Link to="/contact" className="footer-link">
                 Contact Us
               </Link>
