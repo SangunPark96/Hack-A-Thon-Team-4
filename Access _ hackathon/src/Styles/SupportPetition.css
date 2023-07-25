@@ -1,0 +1,43 @@
+.container {
+  text-align: center;
+}
+
+.petition-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  box-shadow: 1px 2px 5px #ccc;
+}
+
+.petition-box h2 {
+  margin-bottom: 20px;
+}
+
+.story {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.supporters-count {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #367ca5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #4f9ec5;
+}

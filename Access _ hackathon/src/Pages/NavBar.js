@@ -23,43 +23,38 @@ const NavBar = () => {
           className="collapse navbar-collapse justify-content-center"
           id="navbarNav"
         >
-          <ul className="navbar-nav nav-fill">
+          <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to="/" className="nav-link nav-link-animation custom-link">
+              <Link to="/" className="nav-link custom-link">
                 Home
               </Link>
             </li>
+
             <li className="nav-item">
-              <Link
-                to="/council"
-                className="nav-link nav-link-animation custom-link"
-              >
+              <Link to="/petition" className="nav-link custom-link">
+                File New Petition
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/support" className="nav-link custom-link">
+                View Petitions
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/council" className="nav-link custom-link">
                 City Council
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link
-                to="/petition"
-                className="nav-link nav-link-animation custom-link"
-              >
-                Voice A Concern
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link
-                to="/profile"
-                className="nav-link nav-link-animation custom-link"
-              >
+              <Link to="/profile" className="nav-link custom-link">
                 Profile
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/resources"
-                className="nav-link nav-link-animation custom-link"
-              >
+              <Link to="/resources" className="nav-link custom-link">
                 Resources
               </Link>
             </li>
