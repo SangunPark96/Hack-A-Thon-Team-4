@@ -13,8 +13,7 @@ import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Profile from "./Pages/Profile";
 import Resources from "./Pages/Resources";
-import PetitionStatistics from "./components/PetitionStatistics";
-import PopularPetitions from "./components/PopularPetition";
+import SupportPetition from "./components/SupportPetition";
 import FileaPetition from "./components/FileaPetition";
 import CityCouncil from "./components/CityCouncil";
 
@@ -26,6 +25,7 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/support" element={<SupportPetition />} />
           <Route path="/petition" element={<FileaPetition />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />

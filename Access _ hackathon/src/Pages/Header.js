@@ -4,6 +4,7 @@ import logo from "../Images/Housing-Hub.jpg";
 import AuthDetails from "../components/AuthDetails";
 import { auth } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
+import "../Styles/Header.css";
 
 const Header = () => {
   const [authUser, setAuthUser] = useState(null);
@@ -29,10 +30,13 @@ const Header = () => {
           <img
             src={logo}
             alt="Logo"
-            style={{ height: "100px", width: "100px" }}
+            style={{ height: "150px", width: "150px" }}
           />
         </div>
       </Link>
+      <h2 className="text-center quote">
+        Empower NYCHA Residents: Petition for Clean & Safe Housing!
+      </h2>
       <div>
         {!authUser ? (
           <React.Fragment>

@@ -1,20 +1,37 @@
 .custom-link {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  margin: 0 35px;
+  margin: 0 10px;
+  padding: 5px 5px;
   letter-spacing: 2px;
+  color: #ffffff;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .navbar {
   background-color: #377ca3ff;
 }
 
-.nav-link-animation {
-  transition: box-shadow 0.2s ease-in-out;
+.navbar-nav {
+  margin-top: 15px;
 }
 
-.nav-link-animation:hover {
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:hover {
   box-shadow: 0 2px 2px #ffffff, 0 2px 7px #ff515aff;
   transform: translateY(-2px);
+}
+
+/* Mobile styles for hamburger menu */
+.navbar-toggler {
+  border: none; /* Remove the default border from the hamburger button */
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* Customize the color of the hamburger icon */
 }

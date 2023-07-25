@@ -43,14 +43,15 @@ export default function CityCouncil() {
 
   return (
     <div className="container-fluid">
+      <h3 className="text-center mb-5">Search for Your Council Person</h3>
+
       <div className="row">
         <div className="col-md-6">
-          <label htmlFor="boroughs">
-            <strong>Select your borough:</strong>
-          </label>
+          <label htmlFor="boroughs"></label>
+
           <select
             name="boroughs"
-            className="form-control"
+            className="form-select"
             id="borough"
             onChange={handleChange}
           >
@@ -65,18 +66,14 @@ export default function CityCouncil() {
           </select>
         </div>
         <div className="col-md-6">
-          <div className="d-flex justify-content-center align-items-center">
-            {" "}
-            {/* Use d-flex and align-items-center */}
+          <div className="search-container">
             <div className="flex-grow-1">
-              {" "}
-              {/* Use flex-grow-1 to expand the search input */}
               <input
                 type="text"
                 className="form-control"
                 placeholder="Search by name"
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={(event) => setSearchTerm(event.target.value)}
               />
             </div>
             <div className="ms-2">
@@ -87,6 +84,7 @@ export default function CityCouncil() {
           </div>
         </div>
       </div>
+
       <div className="row mt-4">
         <div className="col-md-6">
           <CouncilorIndex councilors={filteredCouncilors} borough={borough} />
