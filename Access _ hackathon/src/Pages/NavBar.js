@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/NavBar.css";
 
 const NavBar = () => {
+  useEffect(() => {
+    // Enable Bootstrap's dropdown functionality
+    const toggleDropdown = () => {
+      const dropdownToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+      if (dropdownToggler && navbarCollapse) {
+        dropdownToggler.addEventListener("click", () => {
+          navbarCollapse.classList.toggle("show");
+        });
+      }
+    };
+    toggleDropdown();
+
+    // Close the mobile navbar when a link is clicked
+    const navLinks = document.querySelectorAll(".nav-link");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+    if (navLinks && navbarCollapse) {
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navbarCollapse.classList.remove("show");
+        });
+      });
+    }
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
